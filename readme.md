@@ -7,7 +7,7 @@ Prepared by:
 ~Ahmad Ammar Arif bin Abdul Aziz (1919933)  
 ~Amirul Afiq bin Shahdan (1916491)  
 ~Muhammad Ilham Hakimi bin Mohamad Nizam (1914359)  
-‘Nostalgia’ is a website for an online based in Kuala Lumpur, Malaysia.
+‘Nostalgia’ is a website for an online content rating and discussion based in Kuala Lumpur, Malaysia.
 
 1. Project Description  
    What is the first thing you have in mind when the nostalgia word come out? Of course, we tend to remember the past especially the beautiful moment that we surely cannot get rid of. As for us, the 2000’s kid or more known as the generation Z, we played a lot of games that is unique and have its own rules that need to be abided. For example, we have “Ceper” (bottle cap), “Gasing” (top), Eraser brawl, Clap Card, Yoyo, B-Daman and Bakugan. Apparently, some of games that we played are inspired from traditional games or from “Anime”.  
