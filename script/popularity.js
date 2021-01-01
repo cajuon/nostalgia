@@ -1,100 +1,4 @@
-// let list = [
-//   { game:'B-Daman', 
-//     image: 'images/explore/b-daman.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 58, 
-//     rank: 0 
-//   },
-//   { game:'Bakugan', 
-//     image: 'images/explore/bakugan.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 58,
-//     rank: 0 
-//   },
-//   { game:'Batu Seremban', 
-//     image: 'images/explore/batu-seremban.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 16,
-//     rank: 0 
-//   },
-//   { game:'Ceper', 
-//     image: 'images/explore/ceper.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 61,
-//     rank: 0 
-//   },
-//   { game:'Congkak',
-//     image: 'images/explore/congkak.png', 
-//     link: 'game/SiteMaintenance.html',
-//     vote: 76,
-//     rank: 0 
-//   },
-//   { game:'Eraser Brawl', 
-//     image: 'images/explore/eraser-brawl.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 94,
-//     rank: 0 
-//   },
-//   { game:'Gasing', 
-//     image: 'images/explore/gasing.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 37,
-//     rank: 0 
-//   },
-//   { game:'Ketingting', 
-//     image: 'images/explore/ketingting.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 65,
-//     rank: 0 
-//   },
-//   { game:'Kite', 
-//     image: 'images/explore/kite.png',
-//     link: 'game/kite.html',
-//     vote: 48,
-//     rank: 0
-//   },
-//   { game:'Paper Football',
-//     image: 'images/explore/paper-football.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 73,
-//     rank: 0 
-//   },
-//   { game:'Police and Thief',
-//     image: 'images/explore/police-and-thief.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 11,
-//     rank: 0 
-//   },
-//   { game:'Super Yoyo',
-//     image: 'images/explore/super-yoyo.png',
-//     link: 'game/super-yoyo.html',
-//     vote: 81,
-//     rank: 0 
-//   },
-//   { game:'Tamiya',
-//     image: 'images/explore/tamiya.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 45,
-//     rank: 0
-//   },
-//   { game:'Throwing Slippers', 
-//     image: 'images/explore/throwing-slippers.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 41,
-//     rank: 0
-//   },
-//   { game:'Zero Point', 
-//     image: 'images/explore/zero-point.png',
-//     link: 'game/SiteMaintenance.html',
-//     vote: 29,
-//     rank: 0
-//   }
-// ]
-
-function random(number){
-  return Math.floor(Math.random() * (number+1));
-}
-
+//function to display all games ranking
 function displayRank(list) {
   for(let i=0; i<list.length; i++){
     let titleId = 'pop-game'+list[i].rank+'-title';
@@ -110,6 +14,7 @@ function displayRank(list) {
   console.log(list);
 }
 
+//function to assign rank to the games
 function reorderRank(list) {
   voteList = []; //int array for vote     
   sorted = [];
@@ -154,23 +59,6 @@ function reorderRank(list) {
   }
 }
 
-// function request() {
-//   ajaxget.open('GET', url, true);
-//   ajaxget.setRequestHeader('content-type', 'application/json');
-//   ajaxget.onreadystatechange = function() {
-//     if ( ajaxget.readyState == 4 && ajaxget.status == 200 )
-//     {
-//       console.log(JSON.parse(ajaxget.responseText));
-//       reorderRank(JSON.parse(ajaxget.responseText));
-//     }
-//   }
-//   ajaxget.send(null);
-// }
-
-// function post() {
-
-// }
-
 let list = [];
 let ajaxget = new XMLHttpRequest();
 let url = "game.json";
@@ -178,6 +66,7 @@ let voteList = []; //int array yang store semua vote
 let sorted = []; //array yang vote
 let ranks = []; //array untuk ranks
 
+//request data from JSON file
 ajaxget.open('GET', url, true);
 ajaxget.setRequestHeader('content-type', 'application/json');
 ajaxget.onreadystatechange = function() {
@@ -214,31 +103,3 @@ ajaxget.onreadystatechange = function() {
   }
 }
 ajaxget.send(null);
-
-
-
-//addEventListener for the buttons
-// for(let rank=1;rank<=list.length;rank++){
-//   let upId = 'upvote-'+rank;
-//   let downId = 'downvote-'+rank;
-
-//   document.getElementById(upId).addEventListener('click', function(){
-//     let target = ranks.indexOf(rank);
-//     list[target].vote++;
-    
-//     reorderRank(list);
-//     // displayRank();
-//     console.log(ranks);
-//   });
-  
-//   document.getElementById(downId).addEventListener('click', function(){
-//     let target = ranks.indexOf(rank);
-//     list[target].vote--;
-
-//     reorderRank(list);  
-//     // displayRank();
-//     console.log(ranks);
-//   }); 
-// }
-
-// request();

@@ -1,3 +1,4 @@
+//function to display ranking top 3
 function displayRank(list) {
   for(let i=0; i<list.length; i++){
     if(list[i].rank>=1 && list[i].rank<=3){
@@ -11,6 +12,7 @@ function displayRank(list) {
   console.log(list);
 }
 
+//function to assign rank to the games
 function reorderRank(list) {
   voteList = []; //int array for vote     
   sorted = [];
@@ -55,22 +57,6 @@ function reorderRank(list) {
   }
 }
 
-// function request() {
-//   ajaxget.open('GET', url, true);
-//   ajaxget.setRequestHeader('content-type', 'application/json');
-//   ajaxget.onreadystatechange = function() {
-//     if ( ajaxget.readyState == 4 && ajaxget.status == 200 )
-//     {
-//       console.log(JSON.parse(ajaxget.responseText));
-//       reorderRank(JSON.parse(ajaxget.responseText));
-//     }
-//   }
-//   ajaxget.send(null);
-// }
-
-// function post() {
-
-// }
 
 let list = [];
 let ajaxget = new XMLHttpRequest();
@@ -79,6 +65,7 @@ let voteList = []; //int array yang store semua vote
 let sorted = []; //array yang vote
 let ranks = []; //array untuk ranks
 
+//request data from JSON file
 ajaxget.open('GET', url, true);
 ajaxget.setRequestHeader('content-type', 'application/json');
 ajaxget.onreadystatechange = function() {
@@ -91,31 +78,3 @@ ajaxget.onreadystatechange = function() {
   }
 }
 ajaxget.send(null);
-
-
-
-//addEventListener for the buttons
-// for(let rank=1;rank<=list.length;rank++){
-//   let upId = 'upvote-'+rank;
-//   let downId = 'downvote-'+rank;
-
-//   document.getElementById(upId).addEventListener('click', function(){
-//     let target = ranks.indexOf(rank);
-//     list[target].vote++;
-    
-//     reorderRank(list);
-//     // displayRank();
-//     console.log(ranks);
-//   });
-  
-//   document.getElementById(downId).addEventListener('click', function(){
-//     let target = ranks.indexOf(rank);
-//     list[target].vote--;
-
-//     reorderRank(list);  
-//     // displayRank();
-//     console.log(ranks);
-//   }); 
-// }
-
-// request();

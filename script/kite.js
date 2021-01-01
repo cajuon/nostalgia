@@ -1,3 +1,4 @@
+//function open the tab
 function openCity(evet, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

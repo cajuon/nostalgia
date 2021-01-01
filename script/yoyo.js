@@ -1,8 +1,4 @@
-
-/*
- Tab
-------
-*/
+//Tab
 $('.tab-list a').click(function(event) {
   event.preventDefault();
 
@@ -12,10 +8,7 @@ $('.tab-list a').click(function(event) {
   $('.' + id).addClass('active');
 });
 
-/*
- horizontal scroll bar
-------------------------
-*/
+//horizontal scroll bar
 $(window).scroll(function() {
 	var windowScroll = $(window).scrollTop();
 	var height = $(document).height() - $(window).height();

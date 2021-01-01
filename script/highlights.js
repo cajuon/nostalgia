@@ -9,6 +9,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//change photo in highlight
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
