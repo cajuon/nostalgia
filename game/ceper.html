@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ceper</title>
+    <link rel="icon" href="../images/icon.svg">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/loading.css">
+
+    <style>
+    html{
+        scroll-behavior: smooth;
+      }
+
+      * {
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+        /* overflow-x: hidden;  pindah ke footer punye class*/
+      }
+
+      body {
+        font-family: "Montserrat";
+        background-color: #2d2b2b;
+        /* box-sizing: border-box; */
+      }
+
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .clr{
+        clear: both;
+      }
+
+
+      body{
+        background-image: url("bg_ceper.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    .synopsis{
+      float: left;
+      border-radius: 35px;
+      border: 5px solid #555;
+      width: 58%;
+      padding: 18px;
+      margin-top: 260px;
+      background: rgba(61, 61, 41, 0.3);
+      font-family: Noto Sans, sans-serif;
+      color: white;
+      font-weight: bold;
+      word-spacing: 2px;
+    }
+
+    .cption{
+      clear: both;
+      float: right;
+      font-style: italic;
+      color: black;
+      border-radius: 35px;
+      padding: 5px;
+      margin-top: 10px;
+      margin-right: 55px;
+      color: white;
+      font-family: Noto Sans, sans-serif;
+      font-size: 1.6rem;
+      width: 20%;
+      background: rgba(61, 61, 41, 0.3);
+    }
+
+    .content-wrapper {
+      background-color: rgba(253, 0, 0, 0);
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .clr{
+      clear: both;
+    }
+
+    header{
+      background: black;
+      width: 100%;
+      height: 5em;
+      position: fixed;
+      z-index: 99;
+    }
+
+    #inner-header{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+      /* background: red; */
+    }
+    #logo-container {
+      height: 5em;
+      display: flex;
+      align-items: center;
+      flex-basis: 20%;
+      order: 1;
+      /* background: White; */
+    }
+
+
+    #nostalgia-title {
+      width: 12em;
+    }
+
+    #navigation {
+      /* flex-basis: 50%; */
+      flex-basis: 50%;
+      order: 2;
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+    }
+
+    #navigation a {
+      color: white;
+      font-size: 1.3em;
+    }
+
+    .footer {
+      width: 100%;
+      height: 240px;
+      /* height: auto; */
+      /* height: 300px; */
+      left: 0;
+      bottom: 0;
+      background-color: #000000;
+      color: #f1f1f1;
+      text-align: center;
+      padding-top: 60px;
+      /* overflow-x: hidden; */
+    }
+
+    .footer-left {
+      float: left;
+      max-width: 37.5%;
+      margin-left: 230px;
+    }
+
+    .footer-right {
+      float: right;
+      max-width: 37.5%;
+      margin-right: 213px;
+      height: 130px;
+      /* height: auto; */
+      /* background-color: #000000; */
+    }
+    .footer-lower {
+      clear: both;
+      padding-top: 50px;
+    }
+
+    #footer-lower-left {
+      float: left;
+      margin-left: 300px;
+      max-width: 50%;
+    }
+
+    #footer-lower-left a {
+      color: #f1f1f1;
+    }
+
+    #footer-lower-right {
+      float: right;
+      margin-right: 283px;
+        max-width: 50%;
+    }
+
+    #email {
+      width: 258px;
+      height: 30px;
+      /* height: auto; */
+      padding-left: 10px;
+      background-color: #f1f1f1;
+    }
+
+    #signup-btn {
+      width: 70px;
+      height: 35px;
+      background-color: rgb(255, 0, 0);
+    }
+
+    #tabs-1{ padding: 10px; height: 1375px; background: rgba(0, 204, 68, 0.35)  }
+    #tabs-2{ padding: 10px; height: 1750px; background: rgba(128, 128, 255, 0.35) }
+    /* #tabs-3{ background-color: #66d9ff;  } */
+    #rule1,#rule2,#rule3,#rule4,#rule5,#rule6,#rule7,#rule8
+    { margin-top:15px; font-family:New Century Schoolbook, TeX Gyre Schola, serif; border-radius: 75px; border: 6px solid #b3cccc; padding: 10px; background-color: #e6e6ff;}
+    /* ul{border-radius: 0px; border: solid red 6px; background-color: black;   list-style-type: none;margin: 0;  padding: 0;  overflow: hidden;} */
+    ul{width: 97.3%; padding: 50px; margin:0 auto; border-radius: 0px; border: solid red 6px; background-color: black;   list-style-type: none;  padding: 0;  overflow: hidden;}
+    li{float: left;}
+    li a{font-family: sans-serif; display: block; color: white; text-align: center;padding: 16px;text-decoration: none;}
+    li a:hover { background-color: red;}
+    a{text-decoration: none;}
+
+    .lower-content-page{
+        margin: 5em auto;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .forum{
+        order: 1;
+        width: 70%;
+        height: auto;
+        background:  #9EA0A2;
+        color: white;
+        border-radius: 30px;
+        padding-top: 10px;
+      }
+
+      #forum-title-1, #forum-title-2{
+        display: inline; 
+      }
+
+      #forum-title-1{
+        background-color: black;
+        padding: 10px 25px;
+        border-radius: 30px;
+      }
+
+      #forum-title-2{
+        background-color: red; 
+        padding: 10px 25px;
+        border-radius: 30px;
+      }
+
+      .support-nostalgia{
+        background: white;
+        margin: 50px auto;
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+      }
+
+      #support-nostalgia-img{
+        display: block;
+        float: left;
+        margin: 10px;
+        width: 50px;
+      }
+
+      #support-nostalgia-text{
+        word-wrap: break-word;
+        color: black;
+        font-size: 14px;
+      }
+
+      .fb-comments-container{
+        background: white;
+        width: 700px;
+        display: block;
+        margin: 50px auto; 
+      }
+
+    </style>
+
+  </head>
+
+  <body style="overflow:hidden">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="hxJohhcD"></script>
+
+    <div class="loading"></div>
+
+    <div class="all">
+      <header>
+        <div class="container">
+          <div id="inner-header">
+            <div id="logo-container">
+              <a href="../index.html"><img id="nostalgia-title"src="../images/nostalgia.png" id="Nostalgia"></a>
+            </div>
+            <div id="navigation">
+              <a href="../index.html#explore">explore</a>
+              <a href="../popularity.html" style="margin-left:90px;">popularity</a>
+              <a href="../azlist.html" style="margin-left:66.8px;">a-z list</a>
+              <a href="../aboutus.html" style="margin-left:95.1px;">about us</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="clr"></div>
+
+      <div class="content-wrapper">
+        <div class="container">
+          <!-- <img src="bg_ceper.jpg" alt="gmbaCeper"> -->
+          <div class="synopsis">
+            <h2 style="font-family: Sans-serif">What is Ceper?</h2>
+            <br>
+            <p style="line-height: 1.8;font-family: Georgia, serif">Ceper or "Tudung Botol" is a game based on the use five pieces of bottle cap which can be collected after buying  some soda.
+              It is one of the memorable games often played in the students.
+              Ceper is the popular games around 1970-1980 and still surviving until now.
+              This game usually involves two players and more. The more people, the merrier it will become.
+              The objective of this game is to collect point as many as you can where the point is count based on how many ceper
+              player manage to get in weighing.
+            </p>
+          </div>
+          <div class="ceperpic">
+            <img src="../images/game/ceper/cer-try.png" alt="ceperset" style="border-radius:80%;width:30%; float:right; border: 5px solid #555;margin-top: 180px;">
+
+          </div>
+          <div class="cption">
+            <h3 style="text-align:center;">Ceper</h3>
+          </div>
+
+          <br><br>
+          <div id="tabs" style="clear: both;">
+            <br><br>
+            <ul>
+              <li><a href="#tabs-1">How to Play</a></li>
+              <li><a href="#tabs-2">Rules</a></li>
+              <!-- <li><a href="#tabs-3">Rules</a></li> -->
+            </ul>
+
+            <div id="tabs-1" style="padding:50px;width:90%; margin:0 auto;">
+              <div class="how1">
+                <p style="line-height: 1.8;font-family: Palatino, URW Palladio L, serif;font-size:1.3rem;"> <img src="../images/game/ceper/Timbang.jpg" alt="gmbartimbg" style="float:left; width:250px;height:250px;border-radius:10px;margin-right:10px;">In the beginning, each person will weigh ceper (1 ceper represent 2 points).
+                  Player with higher point will start first.</p>
+              </div>
+              <div class="how2" style="padding:10px; clear:both;">
+                <p style="line-height: 1.8;font-family: Palatino, URW Palladio L, serif;font-size:1.3rem;"> <img src="../images/game/ceper/htppic.png" alt="gmbacara" style="float:right; width:300px;height:300px;border-radius:10px;margin-left:10px;">Ceper must be stacked overlapping (vertical) and placed inside the hand.
+          Then all the ceper will be thrown and player can remove one piece from five.
+          Then, the opposing team will determine what shot you have to play.
+          For each shot, player need to hit a ceper with another ceper using their finger/hand while abiding the rules (will be explain later).</p>
+              </div>
+              <div id="how3"  style="padding:10px; clear:both;">
+                  <p style="line-height: 1.8;font-family: Palatino, URW Palladio L, serif;font-size:1.3rem;"> <img src="../images/game/ceper/scoresheet.png" alt="gambalb" style="float:left; width:250px;height:250px;border-radius:10px;margin-right:10px;">Next, which is the hardest part of this game is that, only after player successfully play the shot then he can weigh.
+          Winners will be determined by the highest total number of ceper successfully weighed.</p>
+              </div>
+              <div id="how4" style="padding:10px; clear:both;" >
+                <hr><br>
+                <h3 style="color: #e60000;font-family:American Typewriter, serif;text-align:center">Check Out This Video For More Info!</h3><br>
+                <center> <iframe width="715" height="402" src="https://www.youtube.com/embed/D3rOOzYPHe8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </div>
+            </div>
+
+            <div id="tabs-2" style="padding:50px;width:90%; margin:0 auto;font-size:1.3rem; text-align:center;">
+              <div id="rule1">
+                <p><strong>Rule 1:</strong> When playing the shot, one ceper cannot hit another ceper that is not supposed to be hit or else
+          his turn is done.</p>
+              </div>
+              <div id="rule2">
+                <center> <img src="../images/game/ceper/tangan_tahan.jpg" alt="gmbathn" style="width:350px; height:350px"></center> <br>
+                <p><strong>Rule 2:</strong> You can use your arms and hands to deflect the caps.</p>
+              </div>
+              <div id="rule3">
+                <p><strong>Rule 3:</strong> Player will spin the ceper to play. Make sure each piece of ceper is not overlap.</p>
+              </div>
+              <div id="rule4">
+                <p><strong>Rule 4:</strong> If the allocation meets the criteria of the rule, the game can be continue with take one of the ceper which are scattered.</p>
+              </div>
+              <div id="rule5">
+                <center> <img src="../images/game/ceper/tindan_dua.jpg" alt="gmbathn" style="width: 160px; height:160px;"></center> <br>
+              <p> <strong>Rule 5:</strong> If there are 2 overlap ceper, in case of one ceper is onto another ceper:
+          the other player will use chosen finger by the player(in current turn) to poke it and scatter them around.
+          If there are 2 overlap ceper, in case of one ceper stack with another ceper:
+          the other player will spin them out.</p>
+              </div>
+              <div id="rule6">
+                <center> <img src="../images/game/ceper/jamban.jpg" alt="jambn" style="height:200px; width:200px"> &nbsp; &nbsp; <img src="../images/game/ceper/Jamban.png" alt="Jambn" style="height:200px; width:400px">  </center> <br>
+              <p><strong>Rule 6:</strong> If there are 3 overlap ceper, it will be Jamban. Jamban is a shot where you have to hit another ceper using a ceper accross some distance(a span) from barricade of
+                3 ceper.</p>
+              </div>
+              <div id="rule7">
+                <center> <img src="../images/game/ceper/Bunga.JPG" alt="gmbabunga" style="height:180px; width:180px"></center> <br>
+                <p><strong>Rule 7:</strong> If there are 4 overlap ceper, it will be Bunga. Bunga is a arrangment of ceper resemble the flower shape. After the arrangement done,
+          the other player will use chosen finger by the player(in current turn) to poke it and scatter them around.</p>
+              </div>
+              <div id="rule8">
+                <p><strong>Rule 8:</strong> If one of the ceper is upside down, the rest must also arranged in upside down. Also, the shot is not play with the finger/hand but
+          using their breath.</p>
+              </div>
+            </div>
+            <!-- <div id="tabs-3">
+            </div> -->
+          </div>
+
+          <div class="lower-content-page">
+            <div class="forum">
+              <h2 id="forum-title-1">FORUM</h2>
+              <h2 id="forum-title-2">Ceper</h2>
+              
+              <div class="clear"></div>
+
+              <div class="support-nostalgia">
+                <img id="support-nostalgia-img" src="../images/icons/support.png" alt="support-nostalgia">
+                <p id="support-nostalgia-text">
+                  Support Nostalgia Team <br/> 
+                  by sharing your story, experience and tips with other users under Forum section on each game pages.
+                </p>
+              </div>
+              <div class="fb-comments-container">
+                <div class="fb-comments" data-href="http://127.0.0.1:5500/webtech%20(atom)/Nostalgia%20Webpage%20Project/ceper.html" data-width="700" data-numposts="5">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-left">
+          <p id="company">The BOise Team</p><br>
+          <p id="address">1234, Gambang Avenue, 55555, Kuala Lumpur</p><br>
+          <p id="phone">Main | (+60) 12-34995678</p>
+      </div>
+        <div class="footer-right">
+          <p>Stay Connected</p><br>
+          <p id="receive">Receive our newsletter and new updates<br>of our website.</p>
+          <input id="email" type="email" placeholder="Your Email Address">
+          <button id="signup-btn">Sign up</button>
+              <!-- <p id="footer-lower-right">Copyright &#169; 2020 The BOise</p> -->
+        </div>
+        <div class="footer-lower">
+          <p id="footer-lower-left"><a href="#" id="privacy-policy">Privacy Policy</a> | <a href="" id="sitemap" target="popup" onclick="window.open('https://github.com/syzwnongithub/Group-D---Nostalgia/blob/main/images/sitemap.jpg?raw=true','Nostalgia Sitemap','width=720,height=480')">Sitemap</a></p>
+          <p id="footer-lower-right">Copyright &#169; 2020 The BOise</p>
+      </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> https://code.jquery.com/jquery-3.5.1.min.js%22%3E</script>
+    <script src="../script/ceper.js">
+    </script>
+    <script src="../script/newsletter.js"></script>
+    <script src="../script/loading.js"></script>
+    <script src="../script/refresh-back-to-top.js"></script>
+
+  </body>
+</html>

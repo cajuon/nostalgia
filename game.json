@@ -1,0 +1,107 @@
+[
+  {
+    "game": "B-Daman",
+    "image": "images/explore/b-daman.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 58,
+    "rank": 0
+  },
+  {
+    "game": "Bakugan",
+    "image": "images/explore/bakugan.png",
+    "link": "game/bakugan.html",
+    "vote": 116,
+    "rank": 0
+  },
+  {
+    "game": "Batu Seremban",
+    "image": "images/explore/batu-seremban.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 16,
+    "rank": 0
+  },
+  {
+    "game": "Ceper",
+    "image": "images/explore/ceper.png",
+    "link": "game/ceper.html",
+    "vote": 177,
+    "rank": 0
+  },
+  {
+    "game": "Congkak",
+    "image": "images/explore/congkak.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 76,
+    "rank": 0
+  },
+  {
+    "game": "Eraser Brawl",
+    "image": "images/explore/eraser-brawl.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 94,
+    "rank": 0
+  },
+  {
+    "game": "Gasing",
+    "image": "images/explore/gasing.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 109,
+    "rank": 0
+  },
+  {
+    "game": "Ketingting",
+    "image": "images/explore/ketingting.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 65,
+    "rank": 0
+  },
+  {
+    "game": "Kite",
+    "image": "images/explore/kite.png",
+    "link": "game/kite.html",
+    "vote": 48,
+    "rank": 0
+  },
+  {
+    "game": "Paper Football",
+    "image": "images/explore/paper-football.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 73,
+    "rank": 0
+  },
+  {
+    "game": "Police and Thief",
+    "image": "images/explore/police-and-thief.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 11,
+    "rank": 0
+  },
+  {
+    "game": "Super Yoyo",
+    "image": "images/explore/super-yoyo.png",
+    "link": "game/super-yoyo.html",
+    "vote": 156,
+    "rank": 0
+  },
+  {
+    "game": "Tamiya",
+    "image": "images/explore/tamiya.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 45,
+    "rank": 0
+  },
+  {
+    "game": "Throwing Slippers",
+    "image": "images/explore/throwing-slippers.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 41,
+    "rank": 0
+  },
+  {
+    "game": "Zero Point",
+    "image": "images/explore/zero-point.png",
+    "link": "game/SiteMaintenance.html",
+    "vote": 29,
+    "rank": 0
+  }
+]

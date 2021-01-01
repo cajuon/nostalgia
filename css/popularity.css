@@ -1,0 +1,257 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat";
+  background-image: url("../images/background-popularity.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  background-color: rgba(253, 0, 0, 0);
+  height: auto;
+  width: 100%;
+  margin: 5em auto;
+  padding-top: 5em;
+}
+
+.clr {
+  clear: both;
+}
+
+header {
+  background: black;
+  width: 100%;
+  height: 5em;
+  position: fixed;
+  z-index: 99;
+}
+
+#inner-header {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  /* background: red; */
+}
+#logo-container {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+  order: 1;
+  /* background: White; */
+}
+
+#nostalgia-title {
+  width: 12em;
+}
+
+#navigation {
+  flex-basis: 50%;
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#navigation a {
+  color: white;
+  font-size: 1.3em;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  color: #f1f1f1;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.footer-left {
+  float: left;
+  max-width: 37.5%;
+  margin-left: 100px;
+}
+
+.footer-right {
+  float: right;
+  max-width: 37.5%;
+  margin-right: 100px;
+  height: 130px;
+  /* background-color: #000000; */
+}
+
+.footer-lower {
+  clear: both;
+  padding-top: 50px;
+}
+
+#footer-lower-left {
+  float: left;
+  max-width: 50%;
+}
+
+#footer-lower-left a {
+  color: #f1f1f1;
+}
+
+#footer-lower-right {
+  float: right;
+  max-width: 50%;
+}
+
+#email {
+  width: 270px;
+  height: 35px;
+  padding-left: 10px;
+  background-color: #f1f1f1;
+}
+
+#signup-btn {
+  width: 70px;
+  height: 35px;
+  background-color: rgb(255, 0, 0);
+}
+
+#popularity-title {
+  width: 300px;
+  background: #2d2b2b;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 45px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+#popularity {
+  width: 100%;
+  height: auto;
+  background: #2d2b2b;
+  color: white;
+  border-radius: 20px;
+}
+
+.game-section {
+  width: 85%;
+  border: 2px solid #ffffff;
+  margin: 4em auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.game-section .no {
+  order: 1;
+  flex-basis: 20%;
+  padding-left: 30px;
+  font-size: 40px;
+}
+
+.game-section .vote-section {
+  order: 2;
+  flex-basis: 100px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-section .vote-section button {
+  background: #1138f7;
+  width: 50px;
+  height: 50px;
+}
+
+.game-section .vote-section .vote-up:hover {
+  background: #19f711;
+}
+.game-section .vote-section .vote-down:hover {
+  background: #f72c11;
+}
+
+.upvote-img,
+.downvote-img {
+  width: 30px;
+}
+
+.game-section .vote-container {
+  order: 3;
+  flex-basis: 20%;
+  height: auto;
+}
+
+.game-section .vote-container h2 {
+  text-align: center;
+  width: 3em;
+  padding: 5px;
+  border-radius: 18px;
+  background: #1138f7;
+}
+
+.img-container {
+  order: 4;
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.game-title {
+  order: 5;
+  flex-basis: 70%;
+  height: auto;
+  text-align: left;
+}
+
+.read-more {
+  order: 6;
+  flex-basis: 30%;
+  height: auto;
+  margin-right: 40px;
+}
+
+.read-more button {
+  float: right;
+  width: 120px;
+  padding: 10px 20px;
+  background: inherit;
+  color: white;
+  border: 1px solid white;
+}
+
+.read-more button:hover {
+  background: rgb(124, 124, 124);
+}
