@@ -23,22 +23,44 @@ Each of the team members prepared 4 web pages for the project as shown in the fo
 Name Contributions
 Amir Syazwan bin Ramlan (1913373)
 • Pages: Home, Popularity, A-Z List, About Us, Kite
-•
+• Web elements: Images, Youtube video, List, Tabs
+• Content for Kite page
+• JavaScript event handlers for Popularity page and using JqueryUI for Kite page
 
 Ahmad Ammar Arif bin Abdul Aziz (1919933)
 • Pages: Home, Popularity, Ceper
-•
+• Web elements: Image, Youtube video, Buttons, Tabs
+• Content for Ceper page
+• JavaScript event handlers for Popularity page and using JqueryUI for Ceper page
 
 Amirul Afiq bin Shahdan (1916491)
 • Pages: Home, Popularity, Super Yoyo, Site Maintenance
-•
+• Web elements: Logo, Images, Youtube video, List, Tabs
+• Content for Super Yoyo page
+• JavaScript event handlers for Popularity page, for loading screen and using JqueryUI for Super Yoyo page
 
 Muhammad Ilham Hakimi bin Mohamad Nizam (1914359)
 • Pages: Home, Popularity, Bakugan
-•
+• Web elements: Images, Youtube video, List, Tabs
+• Content for Bakugan page
+• JavaScript event handlers for Popularity page and Bakugan page
 
 4. Use of third party resources
+   JQueryUI - Tab Widget (for contents on content page)
+   AJAX - XMLHttpRequest (get data from JSON file)
+   Facebook API - Social Plugim-Comments (for forum on content page)
 
 5. References
+
+   Comments - Social Plugin Retrieved 20 December 2020 from https://developers.facebook.com/docs/plugins/comments
+   JavaScript: HTML Form - email validation Retrieved 5 December 2020 from https://www.w3resource.com/javascript/form/email-validation.php
+   How To Create A Slideshow. Retrieved 5 December 2020 from https://www.w3schools.com/howto/howto_js_slideshow.asp
+   How To Create An Grid Image. Retrieved 5 December 2020 from https://www.w3schools.com/howto/howto_js_image_grid.asp
+   How to create json file with data || JSON Basics Retrieved 5 December 2020 from https://www.youtube.com/watch?v=ot5h1FFy7jk
+   Kite Flying Tips Retrieved 15 December 2020 from https://store.kittyhawk.com/pages/kite-flying-tips#:~:text=Hold%20your%20kite%20up%20by
+   Bakugan Battle Brawlers - Wikipedia Retrieved 15 December 2020 from https://en.wikipedia.org/wiki/Bakugan_Battle_Brawlers
+   How to play Ceper / Tutup Botol / Bottle Caps Retrieved 15 December 2020 from https://www.youtube.com/watch?v=D3rOOzYPHe8
+   Jquery #4 - Work on tabs using JQuery Retrieved 15 December 2020 from https://www.youtube.com/watch?v=wM872iEqCfI&list=PLiUrl-SQRR7Ix1S4lm4XPW7DU5Ztv9erB&index=4
+   YoYo Wiki | Fandom Retrieved 15 December 2020 from https://yoyo.fandom.com/wiki/Main_Page
 
 ----------------------- END OF README ----------------------
