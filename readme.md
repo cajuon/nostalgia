@@ -47,7 +47,7 @@ Muhammad Ilham Hakimi bin Mohamad Nizam (1914359)
 4. Use of third party resources  
    JQueryUI - Tab Widget (for contents on content page)  
    AJAX - XMLHttpRequest (get data from JSON file)  
-   Facebook API - Social Plugim-Comments (for forum on content page)
+   Facebook API - Social Plugin-Comments (for forum on content page)
 
 5. References
 
