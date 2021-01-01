@@ -1,275 +1,279 @@
 .container{
   width:80%;
   margin:0 auto;
-  }
+}
 
-  .intro{
-    margin-bottom: 80px;
-    margin-top: 20px;
-    display:flex;
-  }
+.intro{
+  margin-bottom: 80px;
+  margin-top: 20px;
+  display:flex;
+}
 
-  #box{
-    background-color: rgb(172, 175, 182,0.9);
-    border-style: solid;
-    padding: 10px;
-    float: right;
-    width: auto;
+#box{
+  background-color: rgb(172, 175, 182,0.9);
+  border-style: solid;
+  padding: 10px;
+  float: right;
+  width: auto;
 
 
-  }
-  #profile{
-    float: left;
-    width: 200px;
-    height:200px;
-    margin-top: 25px;
-    border-radius: 100%;
+}
+#profile{
+  float: left;
+  width: 200px;
+  height:200px;
+  margin-top: 25px;
+  border-radius: 100%;
 
-  }
-  #bakugan-title{
-    font-size:60px;
-    font-family: fantasy;
-    color:rgb(238, 60, 4);
-    margin-top: 3em;
-  }
-  h3{
-    text-align: center;
-    font-family: monospace;
-    font-size: 40px;
-  }
+}
+#bakugan-title{
+  font-size:60px;
+  font-family: fantasy;
+  color:rgb(238, 60, 4);
+  margin-top: 3em;
+}
+h3{
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+}
 
-  body{​​​​​​​​
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../images/game/bakugan/backgroundbakugankimi.jpg');
-  font-family:"Montserrat";
-  box-sizing: border-box;
-  }​​​​​​​​
+body{​​​​​​​​
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url('../images/game/bakugan/backgroundbakugankimi.jpg');
+font-family:"Montserrat";
+box-sizing: border-box;
+}​​​​​​​​
 
-  #bakugan-content {
-    margin: 15em;        
-  }
+#bakugan-content {
+  margin: 15em;        
+}
 
-  /* Style the tab */
-  .tab {
-    overflow: hidden;
-    display:flex;
-  }
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display:flex;
+}
 
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: grey;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: grey;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
 
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 
-  }
+}
 
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 12px 12px 12px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    clear:both;
-    background: rgba(238, 245, 110, 0.75);
-    margin-bottom: 150px;
-    border-radius: 30px;
-  }
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px 12px 12px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  clear:both;
+  background: rgba(238, 245, 110, 0.75);
+  margin-bottom: 150px;
+  border-radius: 30px;
+}
 
-  .clr{
-    clear: both;
-  }
+.clr{
+  clear: both;
+}
 
-  header{
-    background: black;
-    width: 100%;
-    height: 5em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-  }
+/* header */
+header{
+  background: black;
+  width: 100%;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
 
-  #inner-header{
-    width: 100%;
-    height: 5em;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    /* background: red; */
-  }
-  #logo-container {
-    height: 5em;
-    display: flex;
-    align-items: center;
-    flex-basis: 20%;
-    order: 1;
-    /* background: White; */
-  }
-  
+#inner-header{
+  width: 100%;
+  height: 5em;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  /* background: red; */
+}
 
-  #nostalgia-title {
-    width: 12em;
-  }
+#logo-container {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+  order: 1;
+  /* background: White; */
+}
 
-  #navigation {
-    flex-basis: 50%;
-    order: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+#nostalgia-title {
+  width: 12em;
+}
 
-  #navigation a {
-    color: white;
-    font-size: 1.3em;
-    text-decoration: none;
-    text-align: center;
-  }
+#navigation {
+  flex-basis: 50%;
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .footer {
-    overflow-x: hidden;
-    width: 100%;
-    height: auto;
-    left: 0;
-    bottom: 0;
-    background-color: black;
-    color: #f1f1f1;
-    text-align: center;
-    padding-top: 60px;
-  }
+#navigation a {
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  text-align: center;
+}
 
-  .footer-left {
-    float: left;
-    max-width: 37.5%;
-    margin-left: 220px;
-  }
 
-  .footer-right {
-    float: right;
-    max-width: 37.5%;
-    margin-right: 220px;
-    height: auto;
-    /* background-color: #000000; */
-  }
 
-  .lower-footer {
-    clear: both;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
 
-  #link {
-    padding-left: 300px;
-  }
-  #copyright {
-    padding-right: 300px;
-  }
+.lower-content-page{
+  margin: 5em auto;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
 
-  #email {
-    width: 270px;
-    height: 35px;
-    padding-left: 10px;
-    background-color: #f1f1f1;
-  }
+.forum{
+  order: 1;
+  width: 70%;
+  height: auto;
+  background:  #9EA0A2;
+  color: white;
+  border-radius: 30px;
+  padding-top: 10px;
+}
 
-  #signup-btn {
-    width: 70px;
-    height: 35px;
-    background-color: rgb(255, 0, 0);
-  }
+#forum-title-1, #forum-title-2{
+  display: inline; 
+}
 
-  a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  a:hover,
-  a:focus {
-    text-decoration: none;
-    color: white;
-  }
+#forum-title-1{
+  background-color: black;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
 
-  .lower-content-page{
-    margin: 5em auto;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-  }
+#forum-title-2{
+  background-color: red; 
+  padding: 10px 25px;
+  border-radius: 30px;
+}
 
-  .forum{
-    order: 1;
-    width: 70%;
-    height: auto;
-    background:  #9EA0A2;
-    color: white;
-    border-radius: 30px;
-    padding-top: 10px;
-  }
+.support-nostalgia{
+  background: white;
+  margin: 50px auto;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
 
-  #forum-title-1, #forum-title-2{
-    display: inline; 
-  }
+#support-nostalgia-img{
+  display: block;
+  float: left;
+  margin: 10px;
+  width: 50px;
+}
 
-  #forum-title-1{
-    background-color: black;
-    padding: 10px 25px;
-    border-radius: 30px;
-  }
+#support-nostalgia-text{
+  word-wrap: break-word;
+  color: black;
+  font-size: 14px;
+}
 
-  #forum-title-2{
-    background-color: red; 
-    padding: 10px 25px;
-    border-radius: 30px;
-  }
+.fb-comments-container{
+  background: white;
+  width: 700px;
+  display: block;
+  margin: 50px auto; 
+}
 
-  .support-nostalgia{
-    background: white;
-    margin: 50px auto;
-    padding: 10px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-  }
+/* footer */
+.footer {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+  padding-top: 60px;
+}
 
-  #support-nostalgia-img{
-    display: block;
-    float: left;
-    margin: 10px;
-    width: 50px;
-  }
+.footer-left {
+  float: left;
+  max-width: 37.5%;
+  margin-left: 220px;
+}
 
-  #support-nostalgia-text{
-    word-wrap: break-word;
-    color: black;
-    font-size: 14px;
-  }
+.footer-right {
+  float: right;
+  max-width: 37.5%;
+  margin-right: 220px;
+  height: auto;
+  /* background-color: #000000; */
+}
 
-  .fb-comments-container{
-    background: white;
-    width: 700px;
-    display: block;
-    margin: 50px auto; 
-  }
+.lower-footer {
+  clear: both;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#link {
+  padding-left: 300px;
+}
+#copyright {
+  padding-right: 300px;
+}
+
+#email {
+  width: 270px;
+  height: 35px;
+  padding-left: 10px;
+  background-color: #f1f1f1;
+}
+
+#signup-btn {
+  width: 70px;
+  height: 35px;
+  background-color: rgb(255, 0, 0);
+}

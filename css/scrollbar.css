@@ -13,7 +13,7 @@
   background: #000000;
 }
 
-/* Handle on hover */
+/* Handle hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
   border: 1px solid #f1f1f1;

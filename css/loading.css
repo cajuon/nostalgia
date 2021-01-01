@@ -1,3 +1,4 @@
+/* animation for load the page */
 .loading {
   background: url("../images/loading.gif") no-repeat center center;
   background-size: cover;
